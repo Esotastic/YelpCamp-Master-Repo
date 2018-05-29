@@ -6,17 +6,17 @@ var data = [
     {
         name: "Cloud's Rest",
         image: "https://farm4.staticflickr.com/3795/10131087094_c1c0a1c859.jpg",
-        description: "Hot and bad."
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum sit amet leo a tristique. Integer non rhoncus arcu. Sed non orci ipsum. In imperdiet eros nec ligula molestie dictum. Sed mattis eros et suscipit luctus. Fusce eu leo vitae urna fringilla semper. Aliquam at orci eget metus semper malesuada ac consequat metus."
     },
     {
         name: "Desert Mesa",
         image: "https://farm6.staticflickr.com/5487/11519019346_f66401b6c1.jpg",
-        description: "Cold and good."
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum sit amet leo a tristique. Integer non rhoncus arcu. Sed non orci ipsum. In imperdiet eros nec ligula molestie dictum. Sed mattis eros et suscipit luctus. Fusce eu leo vitae urna fringilla semper. Aliquam at orci eget metus semper malesuada ac consequat metus."
     },
     {
         name: "Canyon Floor",
         image: "https://farm1.staticflickr.com/189/493046463_841a18169e.jpg",
-        description: "Tall and not the worst."
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum sit amet leo a tristique. Integer non rhoncus arcu. Sed non orci ipsum. In imperdiet eros nec ligula molestie dictum. Sed mattis eros et suscipit luctus. Fusce eu leo vitae urna fringilla semper. Aliquam at orci eget metus semper malesuada ac consequat metus."
     }
 ]
 
