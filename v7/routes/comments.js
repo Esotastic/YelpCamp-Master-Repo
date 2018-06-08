@@ -19,6 +19,7 @@ router.get("/new", isLoggedIn, function(req, res){
   });
 });
 
+//COMMENTS CREATE
 router.post("/", isLoggedIn, function(req, res){
   Campground.findById(req.params.id, function(err, campground){
     if(err){
@@ -38,6 +39,7 @@ router.post("/", isLoggedIn, function(req, res){
   });
 });
 
+//MIDDLEWARE 
 function isLoggedIn(req, res, next){
   if(req.isAuthenticated()){
     return next();
