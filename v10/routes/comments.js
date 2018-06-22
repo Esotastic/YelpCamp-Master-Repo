@@ -30,6 +30,7 @@ router.post("/", middleware.isLoggedIn, function(req, res){
     } else {
       Comment.create(req.body.comment, function(err, comment){
         if(err){
+          req.flash("error", "Something went wrong!");
           console.log(err);
         } else {
           //add username and id to comments
@@ -39,6 +40,7 @@ router.post("/", middleware.isLoggedIn, function(req, res){
           comment.save();
           campground.comments.push(comment);
           campground.save();
+          req.flash("success", "Comment successfully added.");
           res.redirect("/campgrounds/" + campground._id);
         }
       });
