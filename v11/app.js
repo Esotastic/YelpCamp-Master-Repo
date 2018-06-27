@@ -3,6 +3,7 @@ var express       = require("express"),
     bodyParser    = require("body-parser"),
     mongoose      = require("mongoose"),
     flash         = require("connect-flash"),
+    moment        = require("moment"),
     passport      = require("passport"),
     LocalStrategy = require("passport-local"),
     Campground    = require("./models/campground"),
@@ -17,12 +18,13 @@ var commentRoutes    = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     authRoutes       = require("./routes/index");
 
-mongoose.connect("mongodb://localhost/dynamicPrice");
+mongoose.connect("mongodb://localhost/yelpCampv11");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
 app.use(flash());
+app.locals.moment = require("moment");
 
 
 // seedDB();  //seeds database
