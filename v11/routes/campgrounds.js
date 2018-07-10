@@ -21,6 +21,10 @@ router.get("/", function(req, res){
       if(err){
         console.log(err);
       } else {
+        if(allCampgrounds.length === 0) {
+          req.flash("error", "Sorry, no campgrounds match your query. Please try again.");
+          return res.redirect("/campgrounds");
+        }
          res.render("campgrounds/index", {campgrounds: allCampgrounds, page: "campgrounds"});
       }
     });
